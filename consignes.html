@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+}
+pre.numberSource { margin-left: 3em; padding-left: 4px; }
+div.sourceCode
+{ color: #cccccc; background-color: #303030; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ffcfaf; } 
+code span.an { color: #7f9f7f; font-weight: bold; } 
+code span.at { } 
+code span.bn { color: #dca3a3; } 
+code span.bu { } 
+code span.cf { color: #f0dfaf; } 
+code span.ch { color: #dca3a3; } 
+code span.cn { color: #dca3a3; font-weight: bold; } 
+code span.co { color: #7f9f7f; } 
+code span.cv { color: #7f9f7f; font-weight: bold; } 
+code span.do { color: #7f9f7f; } 
+code span.dt { color: #dfdfbf; } 
+code span.dv { color: #dcdccc; } 
+code span.er { color: #c3bf9f; } 
+code span.ex { } 
+code span.fl { color: #c0bed1; } 
+code span.fu { color: #efef8f; } 
+code span.im { } 
+code span.in { color: #7f9f7f; font-weight: bold; } 
+code span.kw { color: #f0dfaf; } 
+code span.op { color: #f0efd0; } 
+code span.ot { color: #efef8f; } 
+code span.pp { color: #ffcfaf; font-weight: bold; } 
+code span.sc { color: #dca3a3; } 
+code span.ss { color: #cc9393; } 
+code span.st { color: #cc9393; } 
+code span.va { } 
+code span.vs { color: #cc9393; } 
+code span.wa { color: #7f9f7f; font-weight: bold; } 
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">
+
+
+html {
+font-size: 62.5%;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+body {
+font-size: 1.8rem;
+line-height: 1.618;
+max-width: 38em;
+margin: auto;
+color: #c9c9c9;
+background-color: #222222;
+padding: 13px;
+}
+@media (max-width: 684px) {
+body {
+font-size: 1.53rem;
+}
+}
+@media (max-width: 382px) {
+body {
+font-size: 1.35rem;
+}
+}
+h1, h2, h3, h4, h5, h6 {
+line-height: 1.1;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+font-weight: 700;
+margin-top: 3rem;
+margin-bottom: 1.5rem;
+overflow-wrap: break-word;
+word-wrap: break-word;
+-ms-word-break: break-all;
+word-break: break-word;
+}
+h1 {
+font-size: 2.35em;
+}
+h2 {
+font-size: 2em;
+}
+h3 {
+font-size: 1.75em;
+}
+h4 {
+font-size: 1.5em;
+}
+h5 {
+font-size: 1.25em;
+}
+h6 {
+font-size: 1em;
+}
+p {
+margin-top: 0px;
+margin-bottom: 2.5rem;
+}
+small, sub, sup {
+font-size: 75%;
+}
+hr {
+border-color: #ffffff;
+}
+a {
+text-decoration: none;
+color: #ffffff;
+}
+a:visited {
+color: #e6e6e6;
+}
+a:hover {
+color: #c9c9c9;
+border-bottom: 2px solid #c9c9c9;
+}
+ul {
+padding-left: 1.4em;
+margin-top: 0px;
+margin-bottom: 2.5rem;
+}
+li {
+margin-bottom: 0.4em;
+}
+blockquote {
+margin-left: 0px;
+margin-right: 0px;
+padding-left: 1em;
+padding-top: 0.8em;
+padding-bottom: 0.8em;
+padding-right: 0.8em;
+border-left: 5px solid #ffffff;
+margin-bottom: 2.5rem;
+background-color: #4a4a4a;
+}
+blockquote p {
+margin-bottom: 0;
+}
+img, video {
+height: auto;
+max-width: 100%;
+margin-top: 0px;
+margin-bottom: 2.5rem;
+}
+
+pre {
+background-color: #4a4a4a;
+display: block;
+padding: 1em;
+overflow-x: auto;
+margin-top: 0px;
+margin-bottom: 2.5rem;
+font-size: 0.9em;
+}
+code, kbd, samp {
+font-size: 0.9em;
+padding: 0 0.5em;
+background-color: #4a4a4a;
+white-space: pre-wrap;
+}
+pre > code {
+padding: 0;
+background-color: transparent;
+white-space: pre;
+font-size: 1em;
+}
+
+table {
+text-align: justify;
+width: 100%;
+border-collapse: collapse;
+}
+td, th {
+padding: 0.5em;
+border-bottom: 1px solid #4a4a4a;
+}
+
+input, textarea {
+border: 1px solid #c9c9c9;
+}
+input:focus, textarea:focus {
+border: 1px solid #ffffff;
+}
+textarea {
+width: 100%;
+}
+.button, button, input[type=submit], input[type=reset], input[type=button] {
+display: inline-block;
+padding: 5px 10px;
+text-align: center;
+text-decoration: none;
+white-space: nowrap;
+background-color: #ffffff;
+color: #222222;
+border-radius: 1px;
+border: 1px solid #ffffff;
+cursor: pointer;
+box-sizing: border-box;
+}
+.button[disabled], button[disabled], input[type=submit][disabled], input[type=reset][disabled], input[type=button][disabled] {
+cursor: default;
+opacity: 0.5;
+}
+.button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type=submit]:focus:enabled, input[type=submit]:hover:enabled, input[type=reset]:focus:enabled, input[type=reset]:hover:enabled, input[type=button]:focus:enabled, input[type=button]:hover:enabled {
+background-color: #c9c9c9;
+border-color: #c9c9c9;
+color: #222222;
+outline: 0;
+}
+textarea, select, input {
+color: #c9c9c9;
+padding: 6px 10px; 
+margin-bottom: 10px;
+background-color: #4a4a4a;
+border: 1px solid #4a4a4a;
+border-radius: 4px;
+box-shadow: none;
+box-sizing: border-box;
+}
+textarea:focus, select:focus, input:focus {
+border: 1px solid #ffffff;
+outline: 0;
+}
+input[type=checkbox]:focus {
+outline: 1px dotted #ffffff;
+}
+label, legend, fieldset {
+display: block;
+margin-bottom: 0.5rem;
+font-weight: 600;
+}
+</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="projet-pour-les-gens-sans-alternance-la-tristesse">Projet pour
+les gens sans alternance (la tristesse 😭)</h1>
+<p>Le projet est à effectuer seul ou en groupe de deux maximum. Il y a
+deux problèmes à résoudre ainsi que vos propres tests à écrire cette
+fois ci.</p>
+<p>Ces problèmes sont assez ouverts et possèdent plein de solutions.</p>
+<p>Le premier exercice est bien plus facile que le second, il est
+recommandé de les faire ensemble si vous êtes deux. Ne vous séparez pas
+le travail. Le premier exercice vous aidera à être plus à l’aise sur le
+second.</p>
+<p>Vous avez le droit d’utiliser les opérations python de votre choix
+pour ce projet, mais il n’est pas nécéssaire d’utiliser plus que des
+boucles et des tableaux.</p>
+<h2 id="exercice-1-vérifier-une-grille-de-sudoku">Exercice 1: Vérifier
+une grille de sudoku</h2>
+<p>Vous devez compléter l’algorithme dans le fichier
+<code>grille_valide.py</code> qui permettra de vérifier qu’une grille
+9x9 de sudoku passée en paramètre est valide.</p>
+<p>Pour rappel, une grille de sudoku est valide si:</p>
+<ul>
+<li>Chaque ligne contient tous les chiffres de 1 à 9 sans
+répétitions.</li>
+<li>Chaque colonne contient tous les chiffres de 1 à 9 sans
+répétitions.</li>
+<li>Chaque carré de 3 par 3 contient tous les chiffres de 1 à 9 sans
+répétitions.</li>
+</ul>
+<p>Votre algorithme doit seulement vérifier que la disposition de la
+grille passée est correcte, il n’est pas nécéssaire de vérifier s’il
+existe une solution (ce sera pour l’exercice 2 ça).</p>
+<p>Les grilles sont représentées par un tableau à deux dimensions de
+chaines de caractères. Les cases vides sont représentées par des points
+et les chiffres par les caractères de 1 à 9. Les grilles se lisent de
+gauche à droite et de haut en bas.</p>
+<h3 id="exemples-de-grille">Exemples de grille</h3>
+<p>Dans cette grille, la première ligne contient les chiffres 1, 3, 2 et
+possède 6 cases vides.</p>
+<p>La troisième colonne contient les valeurs 1, 7, 6, 9, 4, 2 et possède
+3 cases vides.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>grille_facile <span class="op">=</span> [</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;1&quot;</span>, <span class="st">&quot;3&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;2&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;8&quot;</span>, <span class="st">&quot;1&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;4&quot;</span>, <span class="st">&quot;2&quot;</span>],</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;9&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;3&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;3&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;7&quot;</span>, <span class="st">&quot;6&quot;</span>, <span class="st">&quot;9&quot;</span>, <span class="st">&quot;8&quot;</span>, <span class="st">&quot;1&quot;</span>, <span class="st">&quot;2&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;1&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;6&quot;</span>, <span class="st">&quot;2&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;5&quot;</span>, <span class="st">&quot;4&quot;</span>, <span class="st">&quot;7&quot;</span>, <span class="st">&quot;9&quot;</span>],</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;5&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;9&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;4&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;1&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;6&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;9&quot;</span>, <span class="st">&quot;3&quot;</span>],</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;6&quot;</span>, <span class="st">&quot;4&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;2&quot;</span>, <span class="st">&quot;5&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;2&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;8&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>]</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>]</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>grille_vide <span class="op">=</span> [</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>],</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="st">&quot;.&quot;</span>]</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>]</span></code></pre></div>
+<p>Si vous voulez créer vos propres grilles, rendez vous sur <a href="https://sudoku.com/">https://sudoku.com/</a> et générez des
+plateaux que vous pouvez recopier ensuite dans votre code</p>
+<h3 id="indices-pour-la-résolution">Indices pour la résolution</h3>
+<ul>
+<li>Pour cet algorithme, ne vous compliquez pas la vie. La solution
+intuitive de vérifier toutes les contraintes fonctionne. Le plus dur
+dans cet exercice est l’écriture du code et la manipulation des tableaux
+à deux dimensions.</li>
+<li>Si votre code devient trop long et ilisible, vous avez le droit de
+créer vos propres fonctions pour organiser votre code. Si vous ne savez
+pas faire, vous pouvez toujours me demander sur Teams ou voir avec vos
+camarades.</li>
+<li>Vous aurez surement besoin des opérateurs <code>in</code> et
+<code>not in</code> de python pour vous simplifier la vie dans ce
+problème. Voici un tutoriel en anglais qui est bien (les tutos en
+français sont vraiment naze) <a href="https://www.askpython.com/python/examples/in-and-not-in-operators-in-python">https://www.askpython.com/python/examples/in-and-not-in-operators-in-python</a></li>
+</ul>
+<h2 id="exercice-2-résoudre-une-grille-de-sudoku">Exercice 2: Résoudre
+une grille de sudoku</h2>
+<p>Vous devez compléter l’algorithme dans le fichier
+<code>resoudre_sudoku.py</code> afin qu’il complète une grille de sudoku
+passée en paramètre avec la bonne solution et la retourne. La grille est
+passée via un tableau à deux dimensions sous le même format que
+l’exercice précédent.</p>
+<p>Le but est de compléter toutes les cases vide qui sont représentée
+par le caractère “.”</p>
+<ul>
+<li>Vous pouvez modifier le tableau passé en paramètre directement, pas
+besoin de le copier.</li>
+<li>Votre algorithme n’a pas besoin de gérer les grilles invalides. Vous
+supposerez que toutes les grilles envoyées possèdent une solution.</li>
+</ul>
+<h3 id="indices-pour-la-résolution-1">Indices pour la résolution</h3>
+<ul>
+<li>Il n’est pas nécéssaire de réutiliser l’algorithme de l’exercice 1
+pour résoudre ce problème. Vous pouvez récupérer certains bouts de code
+qui seront utiles cependant.</li>
+<li>Je vous conseille de commencer par écrire un test. Prenez une grille
+facile ainsi que sa solution, et testez votre algorithme dessus pour
+voir si vous vous rapprochez de la bonne solution.</li>
+<li>Si vous essayez de résoudre ce problème de la même manière que vous
+résolvez un sudoku “à la main”, vous n’allez pas réussir. La solution
+algorithmique est très différente de la méthode qu’un humain va
+utiliser.</li>
+<li>S’il vous vient à l’esprit l’idée de “tester toutes les combinaisons
+possibles jusqu’à trouver une disposition qui fonctionne”, ce n’est pas
+une si mauvaise idée. Le temps d’exécution de votre algorithme sera très
+élevé, mais une des solution optimale repose sur ce principe. Comment
+pouvez vous améliorer cette idée en exploitant les contraintes du sudoku
+?</li>
+<li>Sur ce genre de problème, le nombre de cases vides d’une grille peut
+augmenter de manière exponentielle le temps d’exécution. Si votre
+algorithme n’est pas performant, il se peut qu’il ne termine jamais.
+Commencez par tester sur une grille avec peu de cases vides au début,
+afin de ne pas vous soucier trop de la performance. Utilisez des grilles
+plus complexes par la suite.</li>
+</ul>
+</body>
+</html>
